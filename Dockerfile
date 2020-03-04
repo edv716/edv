@@ -1,5 +1,6 @@
 From centos
-ADD test.sh /
-RUN chmod +x /test.sh
-ENTRYPOINT ["/bin/bash", "/test.sh"]
+COPY sp-1.sh /
+RUN chmod +x /sp-1.sh && /sp-1.sh
+CMD ["Finished"]
+
 
